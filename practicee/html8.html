@@ -16,33 +16,67 @@
         }
         .google{
             width: 200px;
-            margin-left:43%;      
+            margin-bottom: 10px;   
         }
+
+
         .searchbar{
             font:arial;
             font-size: 20px;
             padding: 10px;
             width: 50%;
-            margin-left:25%;
             border: none;
             box-shadow:0 0 7px rgb(126, 115, 115,0.2);
             border-radius: 30px;
+            display: inline;
+
+        }
+
+        .googles{
+            width: 100%;
+          
+            text-align: center;
+            vertical-align:auto;
+        }
+
+        .search{
+            text-align: center;
+        }
+        .random{
+            text-align: center;
+            font-family: arial;
+        }
+        .p2,
+        .p1{
+            background-color: rgb(238, 234, 234);
+            Padding: 15px 11px;
+            margin-right: 10px;
+
         }
 
 
     </style>
 </head>
 <body>
-    <input class=type="text" placeholder="Name">
-    <input type="text" placeholder="Email">
+   
 
-    <p>Thanks for chatting with our customer support. Would you like to take our quake survey?</p>
-    <button>Yes</button>
-    <button>No</button>
-    <br>
-    <img class = 'google'src="../thumbnale/Google_2015_logo.svg.webp">
-    <input type="text" class ='searchbar' placeholder="Search Google or type URL">
 
+    <div class="googles">
+     <img class = 'google'src="../thumbnale/Google_2015_logo.svg.webp">
+    </div>
+    <div class= 'search'>
+            <input type="text" class ='searchbar' placeholder="Search Google or type URL">
+
+    </div>
+
+    <div class = 'random'>
+        <p class = 'p2'> Google Search</p>
+        <p class = 'p1'> I'm Feeling Lucky</p>
+
+    </div>
+
+   
+    
 
     
 </body>
