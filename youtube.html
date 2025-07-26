@@ -8,8 +8,10 @@
         <link rel="stylesheet" href="style.css">
             <style>
                 body{
-                    font-family: Roboto,arial;
                     margin-top: 0;
+                    font-family: Roboto,arial;
+                    height: 1000px;
+                    padding-top: 50px;
                 }
 
                 p{
@@ -22,6 +24,7 @@
                     grid-template-columns: 1fr 1fr 1fr 1fr;
                     column-gap: 10px;
                     row-gap: 20px;
+                    margin-top: 60px;
 
                 }
 
@@ -69,6 +72,19 @@
                     margin-bottom: 20px;
                     border-width:100px;
                     border-color:gray;
+                    position: fixed;
+                    left: 0px;
+                    right: 0px;
+                    z-index: 100;
+                    top:0px;
+                    background-color: white;
+                    border-bottom-width: 1px;
+                    border-bottom-style: solid;
+                    border-bottom-color:rgb(223, 216, 216);
+                    
+
+
+
                
                     
 
@@ -178,12 +194,29 @@
                 
                 }
 
+                .timer{
+                    background-color: black;
+                    color:white;
+                    position: absolute;
+                    right: 5px;
+                    bottom: 10px;
+                    padding: 5px 6px;
+                    font-size: 12px;
+                    font-weight: 700;
+                }
+
+
+                .thumbnale{
+                    position: relative;
+                }
+
     
             </style>
 
     </head>
 
     <body>
+
         <div class ="header">
             <div class="part1">
                 <img class="burger" src="/thumbnale/hamburger-menu.svg">
@@ -203,9 +236,14 @@
             </div>
         </div>
 
+
+
         <div class = "Youtube-grid">
             <div class ='youtube-preview'>
                 <div class = 'thumbnale'> <img src="/thumbnale/thumbnail-1.webp" class = "youtube-tumbnale">
+                    <div class="timer">
+                        14:50
+                    </div>
                 </div>
                 <div class="info-grid">
                     <div class ="youtube-profiles">
@@ -232,6 +270,9 @@
 
            <div class ='youtube-preview'>
                 <div class = 'thumbnale'> <img src="/thumbnale/thumbnail-2.webp" class = "youtube-tumbnale">
+                    <div class="timer">
+                        8:22
+                    </div>
                 </div>
                 <div class="info-grid">
                     <div class ="youtube-profiles">
@@ -257,6 +298,10 @@
             </div>
            <div class ='youtube-preview'>
                 <div class = 'thumbnale'> <img src="/thumbnale/thumbnail-3.webp" class = "youtube-tumbnale">
+                    <div class="timer">
+                        9:13
+
+                    </div>
                 </div>
                 <div class="info-grid">
                     <div class ="youtube-profiles">
@@ -286,6 +331,10 @@
             </div>
              <div class ='youtube-preview'>
                 <div class = 'thumbnale'> <img src="/thumbnale/thumbnail-4.webp" class = "youtube-tumbnale">
+                    <div class="timer">
+                        22:09
+
+                    </div>
                 </div>
                 <div class="info-grid">
                     <div class ="youtube-profiles">
@@ -315,6 +364,10 @@
 
              <div class ='youtube-preview'>
                 <div class = 'thumbnale'> <img src="/thumbnale/thumbnail-5.webp" class = "youtube-tumbnale">
+                    <div class="timer">
+                        11:17
+
+                    </div>
                 </div>
                 <div class="info-grid">
                     <div class ="youtube-profiles">
@@ -341,6 +394,9 @@
 
            <div class ='youtube-preview'>
                 <div class = 'thumbnale'> <img src="/thumbnale/thumbnail-6.webp" class = "youtube-tumbnale">
+                    <div class="timer">
+                        19:59
+                    </div>
                 </div>
                 <div class="info-grid">
                     <div class ="youtube-profiles">
@@ -366,6 +422,9 @@
             </div>
            <div class ='youtube-preview'>
                 <div class = 'thumbnale'> <img src="/thumbnale/thumbnail-7.webp" class = "youtube-tumbnale">
+                    <div class="timer">
+                        10:13
+                    </div>
                 </div>
                 <div class="info-grid">
                     <div class ="youtube-profiles">
@@ -395,6 +454,9 @@
             </div>
              <div class ='youtube-preview'>
                 <div class = 'thumbnale'> <img src="/thumbnale/thumbnail-8.webp" class = "youtube-tumbnale">
+                    <div class="timer">
+                        7:12
+                    </div>
                 </div>
                 <div class="info-grid">
                     <div class ="youtube-profiles">
