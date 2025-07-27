@@ -12,6 +12,8 @@
                     font-family: Roboto,arial;
                     height: 1000px;
                     padding-top: 50px;
+                    background-color: rgb(249, 245, 245);
+                    padding-right: 10px;
                 }
 
                 p{
@@ -24,7 +26,8 @@
                     grid-template-columns: 1fr 1fr 1fr 1fr;
                     column-gap: 10px;
                     row-gap: 20px;
-                    margin-top: 60px;
+                    margin-top: 40px;
+                    padding-left: 100px;
 
                 }
 
@@ -99,9 +102,11 @@
                 .burger{
                     height: 20px;
                     margin-right: 20px;
+                    margin-left: 25px;
                 }
                 .banner{
                     height: 20px;
+                    margin-left: 20px;
                 }
                
 
@@ -118,7 +123,10 @@
 
                 .search2{
                     width:50px;
+                    position: relative;
                 }
+
+            
                 
                 .voice{
 
@@ -150,6 +158,24 @@
                     border:solid;
                     border-width:1px;
                     border-color:rgb(209, 201, 201);
+                    position: relative;
+
+                   
+
+
+                }
+
+
+                .search2:hover .tool{
+                    font-family: Roboto,arial;
+                    color:white;
+                    position: absolute;
+                    bottom: -50px;
+                    background-color: rgba(96, 93, 93, 0.8);
+                    left:-7px;
+                    padding:7px 10px;
+                    border-radius:3px;
+                    opacity: 100;
 
 
                 }
@@ -173,7 +199,6 @@
                     width: 180px;
                     display:flex;
                     align-items:center;
-                    justify-content: space-between;
 
                     
                 }
@@ -203,12 +228,107 @@
                     padding: 5px 6px;
                     font-size: 12px;
                     font-weight: 700;
+                    border-radius:5px
                 }
 
 
                 .thumbnale{
                     position: relative;
                 }
+
+                .sidebar{
+                    width: 90px;
+                    margin-top: 70px;
+                    position: fixed;
+                    left:0;
+                    top: 0;
+                    bottom:0;
+                    padding-top: 20px;
+                    background-color: white;
+                    z-index: 100;
+
+                    
+                }
+
+                .link:hover{
+                    background-color: lightgray;
+                }
+
+                .link{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .link img{
+                    width: 30px;
+                    height: 23px;
+                    margin-bottom: 5px;
+                    
+
+                }
+
+                .link p{
+                    margin-bottom: 25px;
+                    font-size:10px
+                }
+                .tool{
+                    font-family: Roboto,arial;
+                    color:white;
+                    position: absolute;
+                    bottom: -50px;
+                    background-color: rgba(95, 93, 93, 0.8);
+                    left:-7px;
+                    padding:10px 10px;
+                    border-radius:3px;
+                    opacity: 0;
+                    pointer-events: none;
+
+
+                }
+
+                .tooltip{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-right: 15px;
+                    position: relative;
+                    
+                }
+
+             
+
+                .tools{
+                    position: relative;
+                    margin-top:5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                }
+
+                .tools p,
+                .tooltip p{
+                    position: absolute;
+                    word-wrap: normal;
+                    white-space: nowrap;
+                    bottom:-35px;
+                    color:white;
+                    background-color: rgba(95, 93, 93, 0.8);
+                    padding:10px 10px;
+                    border-radius:3px;
+                    font-size:13px;
+                    opacity: 0;
+
+                    
+                }
+
+                .tools:hover p,
+                .tooltip:hover p
+                {
+                    opacity: 100;
+                }
+
+
 
     
             </style>
@@ -225,20 +345,68 @@
 
             <div class="part2">
               <input class="search"type="text" placeholder="Search">
-              <button class="search2"><img class= "search3"src="thumbnale/search.svg"></button>
-              <img src="thumbnale/voice-search-icon.svg"  class="voice">
+              <button class="search2"><img class= "search3"src="thumbnale/search.svg">
+                <p class="tool">Search</p>
+            </button>
+            <div class="tools">
+            <img src="thumbnale/voice-search-icon.svg"  class="voice">
+            <p>Search with your voice</p>
+
+            </div>
             </div>
             <div class="part3">
-                <img class= 'create' src="thumbnale/upload.svg">
-                <img class="apps" src="thumbnale/youtube-apps.svg">
+                <div class="tooltip">
+                    <img class="apps" src="thumbnale/upload.svg">
+                    <p>Create</p>
+                </div>
+                <div class="tooltip">
+                    <img class="apps" src="thumbnale/youtube-apps.svg">
+                    <p>Youtube Apps</p>
+
+                </div>
+                <div class="tooltip">
                 <img class="notfi" src="thumbnale/notifications.svg">
+                    <p>Notifications</p>
+
+                </div>
+                <div class="tooltip">
                 <img class="avatar" src="thumbnale/cat.jpg">
+                </div>
             </div>
         </div>
 
+      
+        <div class="sidebar">
+            <div class="link">
+                <img src="thumbnale/home.svg">
+                <p>Home</p>
+            </div>
+             <div class="link">
+                <img src="thumbnale/explore.svg">
+                <p>Explore</p>
+            </div>
+             <div class="link">
+                <img src="thumbnale/subscriptions.svg">
+                <p>Subscriptions</p>
+            </div>
+             <div class="link">
+                <img src="thumbnale/originals.svg">
+                <p>Originals</p>
+            </div>
+             <div class="link">
+                <img src="thumbnale/youtube-music.svg">
+                <p>Youtube Music</p>
+            </div>
+             <div class="link">
+                <img src="thumbnale/library.svg">
+                <p>library</p>
+            </div>
+
+        </div>
 
 
         <div class = "Youtube-grid">
+           
             <div class ='youtube-preview'>
                 <div class = 'thumbnale'> <img src="thumbnale/thumbnail-1.webp" class = "youtube-tumbnale">
                     <div class="timer">
